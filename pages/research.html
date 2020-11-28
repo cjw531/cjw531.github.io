@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Jiwon Choi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100, 200, 300, 400, 500, 600, 700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300, 500, 700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a>JIWON CHOI</a>
+        <div class="topnav-right" aria-labelledby="Main Menu Label">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/research.html" aria-current="page">Research</a></li>
+                <li><a href="../pages/project.html">Project</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="img-container">
+            <div class="research-img" role="Decorative" aria-labelledby="Picture of Davis Hall 337, at University at Buffalo"></div>
+            <div class="centered_text_over_img" aria-labelledby="Brief research interests section">
+                <div class=".centered_text_over_img name"><b>My Research Includes:</b></div> Robotics, AI, Autonomous Systems<br>
+            </div>
+            <div class="bottom-right_text_over_img">Davis Hall 337<br>&copy; 2019 Jiwon Choi</div>
+        </div>
+    </main>
+
+    <div class="container-contact" aria-labelledby="Section for Number of Publications">
+        <h1>Publication Over the Years</h1>
+        <div class="wrapper-plot" aria-labelledby="Chart of number of publications over the year">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <div class="container-contact" aria-labelledby="Section for List of Research">
+        <h1 id="pagemark">Research</h1>
+        <button class="collapsible" aria-labelledby="collapsible section for the first research">Autonomous Modification of Unstructured Environments (ICRA'20)</button>
+        <div class="collapsible-content" aria-labelledby="description section for the first research">
+            <img src="../assets/img/icra-1.jpeg" alt="">
+            <figcaption>Fig. 1: Robot placing a stone in the structure. </figcaption>
+            <p>We develop a specialized construction algorithm and robotic system that can autonomously build motion support structures with previously unseen objects. The approach is based on our prior work on adaptive ramp building algorithms, but it eliminates
+                the assumption of having specialized building materials that simplify manipulation and planning for stability. Utilizing irregularly shaped stones makes the problem significantly more challenging since the outcome of individual placements
+                is sensitive to details of contact geometry and friction, which are difficult to observe. To reuse the same high-level algorithm, we develop a new physics-based planner that explicitly considers the uncertainty produced by incomplete in-situ
+                sensing and imprecision during pickup and placement. The resulting system can build structures with more than 70 stones, which in turn provide traversable paths to previously inaccessible locations.</p>
+            <img src="../assets/img/icra-2.png" alt="">
+            <figcaption>Fig. 2: Valid Pose Search and Hierarchical Filtering</figcaption>
+            <p>We propose a method that utilizes simulations to incorporate the uncertainties in the world description and in the robot dynamics. The physics simulator needs to be tuned to favor speed over accuracy to allow for a sufficient number of simulated
+                samples of the world model in reasonable time.</p>
+            <iframe src="https://www.youtube.com/embed/-gj1E9dZ6Cs?list=PLf5ketaUezFSotXw1ZNR46ZEJKxl63-mK" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+            <figcaption>Video 1: Experiments</figcaption>
+            <p>The video shows the 5 experiments that we have done (Video 1). In the video, the robot is deployed on a terrain that is navigable and has access to an abundant supply of stones from a specified region (quarry). The robot system is tasked to
+                build a navigable path to the target area using the stones from the quarry. Starting from the largest stone option, the robot estimates a deposition pose. If no pose was found, it either: (a) moves to the next largest stone until it finds
+                a stone with a valid deposition pose, or (b) requests for more options. Once the building process is completed, the robot finds a navigable path in the structure and attempts to reach the target area. In the experiments, the robot's sensing
+                range is large enough to see the target structure.</p>
+            <p>The presented system is able to build navigable structures over unstructured terrain with found stones without prior knowledge of either the stones or the environment. The system can operate fully autonomously over many hours and find, choose,
+                and deposit stones to build motion support structures.</p>
+            <br>
+            <p>*This work has accepted to <a href="https://ieeexplore.ieee.org/abstract/document/9197372" target="_blank" rel="noopener noreferrer">ICRA'20</a>, supported by NSF#184634 and CAPES #013584/2013-08.</p>
+        </div>
+        <button class="collapsible" aria-labelledby="collapsible section for the second research">Performances of AprilTag and Intel&reg; RealSense&trade; Tracking Camera T265 on 4-Wheeled Robot</button>
+        <div class="collapsible-content" aria-labelledby="description section for the second research">
+            <img src="../assets/img/t265-1.jpeg" alt="">
+            <figcaption>Fig. 1: Intel&reg; RealSense&trade; Tracking Camera T265 attached to the robot</figcaption>
+            <p>By knowing the fact that detecting and publishing the AprilTag coordinates are time-consuming, attaching Intel&reg; RealSense&trade; Tracking Camera T265 to compare and analyze these two performances, with TF (transformations) system. If the
+                tracking camera's performances in terms of time turn out to be better, then we will use the AprilTag to acquire the position of the robot in the world frame at first, then we will be relying on the tracking camera to track the position
+                of the robot. The robot's location will be captured through the static global Xbox camera, by capturing the AprilTag attached to the robot, which we already set up beforehand. </p>
+            <img src="../assets/img/t265-2.png" alt="">
+            <figcaption>Fig. 2: Rviz visualization. Fisheye works well, and the position of the camera frame correctly depicted</figcaption>
+            <p>Visualization of the datasets is challenging due to the offset distance between the center of the AprilTag and the Intel Tracking Camera T265 (Fig. 2). Due to this offset, the visualization of the 3D plot does not look intuitive -the the flow
+                of trajectories are same, but there always exists a distance gap.</p>
+            <iframe src="https://www.youtube.com/embed/2OmOSTcAfLQ" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+            <figcaption>Video 1: Rugged Terrain, with Random Robot Movement</figcaption>
+            <p>Data Collected as follows: </p>
+            <ol class="ol-about">
+                <li>Smooth Terrain, with Straight Robot Movement</li>
+                <li>Rugged Terrain, with Straight Robot Movement</li>
+                <li>Smooth Terrain, with Random Robot Movement</li>
+                <li>Rugged Terrain, with Random Robot Movement</li>
+            </ol>
+            <img src="../assets/img/t265-3.png" alt="">
+            <figcaption>Fig. 3: Trajectory analysis for the AprilTag (in red color) and the Intel Tracking Camera T265 (in green color) with the environment of unstructured terrain, with random movement of the robot. The gap between coordinates is the distance offset
+                between the center positions.</figcaption>
+            <p>This last experiment has the most difference between the tracking camera and the AprilTag. Unlike the first three 3D trajectory, once I compare the actual trajectory of the robot (Video 1) to the 3D scatter plot (Fig. 3), there are some missing
+                coordinates in the trajectory detected by the AprilTag. Once you take a look at the x-axis from -120 to -140, some of the red coordinates are missing -these missing coordinates does not make sense because the robot cannot just jump from
+                one position to another. However, in case of the camera, it precisely and continuously detected the trajectory where the robot was circulating around. Thus, in can be inferred that there are some delays exists in the AprilTag; in other
+                words, the performance of the AprilTag is relatively slower compared to the tracking camera.</p>
+            <br>
+            <p>Read more at: </p>
+            <ol class="ol-about">
+                <li><a href="https://medium.com/cse-468-568-robotic-algorithms/performances-of-apriltag-and-intel-realsense-tracking-camera-t265-19e3bc887c01" target="_blank" rel="noopener noreferrer">
+                    Performances of AprilTag and Intel Realsense Tracking Camera T265</a></li>
+                <li><a href="https://medium.com/cse-468-568-robotic-algorithms/performances-of-apriltag-and-intel-realsense-tracking-camera-t265-part-2-3-a71d299988f" target="_blank" rel="noopener noreferrer">
+                    Performances of AprilTag and Intel Realsense Tracking Camera T265 (Part 2/3)</a></li>
+                <li><a href="https://medium.com/cse-468-568-robotic-algorithms/performances-of-apriltag-and-intel-realsense-tracking-camera-t265-part-3-3-4e962586e882" target="_blank" rel="noopener noreferrer">
+                    Performances of AprilTag and Intel Realsense Tracking Camera T265 (Part 3/3)</a></li>
+            </ol>
+        </div>
+        <button class="collapsible" aria-labelledby="collapsible section for the third research">Autonomous Modification of Unstructured Environments: Modelling System Parameters (NERC'19)</button>
+        <div class="collapsible-content" aria-labelledby="description section for the third research">
+            <img src="../assets/img/nerc-1.jpg" alt="">
+            <figcaption>Fig. 1: (left) Point Cloud of Structure; (right) Generated terrain mesh and the construction path (shown in purple).</figcaption>
+            <p>Given a terrain height function (Fig. 1), the Minimal Additive Ramp Structure (MARS) provides the upper bounds for the least additive construction for building perfect motion support structures and the MARS Gap provides the navigable substructure
+                to build. </p>
+            <p>Physics simulators aim to reduce the simulation-to-reality gap by employing accurate shape description of the objects. We utilize a sample-based physics simulation method that models the uncertainties in the world description, and performs
+                approximate forward simulations using samples from the models. Given a stone shape distribution and terrain height function, multiple stone meshes are evaluated in order to find optimal deposition poses.</p>
+            <img src="../assets/img/nerc-2.png" alt="">
+            <figcaption>Fig. 2: Average run time for each c<sub>iter</sub> dataset.</figcaption>
+            <p>In order to make this project work as designed, we need to perform a large amount of simulation runs. Since the terrain and stones are both noisy representations of the real world, we do not want to perform accurate, computationally expensive
+                simulations. Hence, we look at the tradeoff between accuracy and speed for different simulation parameters, to tune the simulator given the terrain height function and the object shape distribution.</p>
+            <p>We use pybullet for rigid body physics simulations. The controllable parameters are given by the tuple (c<sub>sim_time</sub>, c<sub>iters</sub>, c<sub>max_faces</sub>). We perform parameter tuning by comparing the performance and run times
+                of the best possible setting, (0.004, 2000, 1500), with a mean run time of 58 seconds. Our parameter search favors speed over accuracy; it chooses a value that does not "deviate" greatly from the best setting, and has considerably lower
+                run times. The parameter tuple (0.09, 300, 250) is selected, with an average run time of 9 seconds.</p>
+            <br>
+            <p>*This work has accepted to <a href="https://nerc.seas.upenn.edu" target="_blank" rel="noopener noreferrer">NERC'19</a>, supported by NSF#184634 and CAPES #013584/2013-08.</p>
+        </div>
+        <button class="collapsible" aria-labelledby="collapsible section for the fourth research">Planning for Robotic Dry Stacking with Irregular Stones (FSR'19)</button>
+        <div class="collapsible-content" aria-labelledby="description section for the fourth research">
+            <img src="../assets/img/fsr-1.png" alt="">
+            <figcaption>Fig. 1: System Overview</figcaption>
+            <p>Dry stacking with found, minimally processed rocks is a useful capability when it comes to autonomous construction. However, it is a difficult planning problem since both the state and action space are continuous, and structural stability
+                is strongly affected by complex friction and contact constraints. We propose an algorithmic approach for autonomous construction from a collection of irregularly shaped objects. The structure planning is calculated in simulation by first
+                considering geometric and physical constraints to find a small set of feasible actions and then refined by using a hierarchical filter based on heuristics. These plans are then executed open-loop with a robotic arm equipped with a wrist
+                RGB-D camera. Experimental results show that the proposed planning algorithm can significantly improve the state of the art robotics dry-stacking techniques.</p>
+            <br>
+            <p>*This work has accepted to <a href="http://www.srg.mech.keio.ac.jp/fsr2019/" target="_blank" rel="noopener noreferrer">FSR'19</a>, supported by <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1846340&HistoricalAwards=false" target="_blank"
+                    rel="noopener noreferrer">NSF#184634</a> and the <a href="https://www.buffalo.edu/smart.html" target="_blank" rel="noopener noreferrer">SMART Community of Excellence at University at Buffalo</a>.</p>
+        </div>
+    </div>
+    <script src="collapse.js"></script>
+    <script src="research_plot.js"></script>
+
+</body>
+
+</html>

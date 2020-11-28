@@ -1,0 +1,6 @@
+@article{liu2019planning,
+  title={Planning for robotic dry stacking with irregular stones},
+  author={Liu, Yifang and Choi, Jiwon and Napp, Nils},
+  journal={Field and Service Robotics. Springer},
+  year={2019}
+}

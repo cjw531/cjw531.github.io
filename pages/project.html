@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Jiwon Choi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100, 200, 300, 400, 500, 600, 700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300, 500, 700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a>JIWON CHOI</a>
+        <div class="topnav-right" aria-labelledby="Main Menu Label">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/research.html">Research</a></li>
+                <li><a href="../pages/project.html" aria-current="page">Project</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="img-container">
+            <div class="project-img" role="Decorative" aria-labelledby="Picture of Peace Bridge, Buffalo"></div>
+            <div class="centered_text_over_img" aria-labelledby="Brief project lists">
+                <div class=".centered_text_over_img name"><b>My Project Includes:</b></div> Android and Game Development, Socket Programming, and Programs with OpenCV<br>
+            </div>
+            <div class="bottom-right_text_over_img">Peace Bridge<br>&copy; 2019 Jiwon Choi</div>
+        </div>
+    </main>
+
+    <div class="container-contact" aria-labelledby="Section for Number of Projects">
+        <h1>Projects Over the Years</h1>
+        <div class="wrapper-plot" aria-labelledby="Chart of number of projects over the year">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <div class="container-contact" aria-labelledby="Section for List of Projects">
+        <h1 id="pagemark">Project</h1>
+        <button class="collapsible" aria-labelledby="collapsible section for the first project">368: Android Application</button>
+        <div class="collapsible-content" aria-labelledby="description section for the first project">
+            <iframe src="https://www.youtube.com/embed/qPLhXXHlySU" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+            <figcaption>Video 1: Advertisement Video for 368</figcaption>
+            <br>
+            <p>This is an advertisement video for the 368: Android mobile application. This scheduling Android mobile application is a combination of Google Calendar and Doodle. People usually use Google Calendar to manage their personal schedule, and use
+                Doodle to find all available times of several others. With this single application, it allows you to manage not only a person's schedule, but also schedule group meetings. That's where 368 comes in. 368 is here for users to plan their
+                365 days. And 368 will be right behind users, to get them ahead 3 days. To manage users' 365, and make them feel like they have 368 days.
+            </p><br>
+            <button class="button-icon" onclick="javascript:window.open('https://github.com/cse442-spring-2020-offering/cse442-semester-project-368','_blank')" target="_blank"><span class="fab fa-github"></span> GitHub</button>
+            <ul class="ul-project">
+                <li>A mobile scheduling application that helps to manage both personal schedules and appointments among multiple users.</li>
+                <li>Software/Language Used: Android Studio, Java, XML, PHP, SQL</li>
+            </ul>
+        </div>
+        <button class="collapsible" aria-labelledby="collapsible section for the second project">Currency Calculator: Android Application</button>
+        <div class="collapsible-content" aria-labelledby="description section for the second project">
+            <br>
+            <button class="button-icon" onclick="javascript:window.open('https://github.com/cjw531/android_currency','_blank')" target="_blank"><span class="fab fa-github"></span> GitHub</button>
+            <ul class="ul-project">
+                <li>A currency converter/calculator with <a href="https://fixer.io" target="_blank" rel="noopener noreferrer">fixer.io</a> API.</li>
+                <li>Software/Language Used: Android Studio, Java, XML</li>
+            </ul>
+        </div>
+        <button class="collapsible" aria-labelledby="collapsible section for the third project">Letter Game</button>
+        <div class="collapsible-content" aria-labelledby="description section for the third project">
+            <br>
+            <button class="button-icon" onclick="javascript:window.open('https://github.com/LetterGame/Letter_game','_blank')" target="_blank"><span class="fab fa-github"></span> GitHub</button>
+            <ul class="ul-project">
+                <li>A platform game; the main character, a letter, travels around the world.</li>
+                <li>Worked on creating various movement patterns of opponents.</li>
+                <li>Software/Language Used: Unity, C#</li>
+            </ul>
+        </div>
+        <button class="collapsible" aria-labelledby="collapsible section for the fourth project">Paint Chat: Socket Programming</button>
+        <div class="collapsible-content" aria-labelledby="description section for the fourth project">
+            <br>
+            <button class="button-icon" onclick="javascript:window.open('https://github.com/PaintChatProject','_blank')" target="_blank"><span class="fab fa-github"></span> GitHub</button>
+            <ul class="ul-project">
+                <li>A messenger program that can send text with some drawings.</li>
+                <li>Worked on Graphic User Interface of the program, by using Swing. </li>
+                <li>Software/Language Used: IntelliJ, Java</li>
+            </ul>
+        </div>
+        <button class="collapsible" aria-labelledby="collapsible section for the fifth project">Voyage: Android Application</button>
+        <div class="collapsible-content" aria-labelledby="description section for the fifth project">
+            <br>
+            <button class="button-icon" onclick="javascript:window.open('https://bitbucket.org/JiwonChoi219/adatravellingapp/src/master/','_blank')" target="_blank"><span class="fab fa-bitbucket"></span> Bitbucket</button>
+            <ul class="ul-project">
+                <li>An Android application that are useful during traveling.</li>
+                <li>An Android mobile application for travelers with functions of calendar, diary, currency converter, navigations with Google Maps API, translation, budget notes, country information with Wikipedia Web, and weather information with OpenWeatherMap
+                    API.
+                </li>
+                <li>Worked on building a local database using SQLite, created diary feature with camera access, and calendar function with API for the Android application for travelers.</li>
+                <li>Software/Language Used: Android Studio, Java, XML, SQL</li>
+            </ul>
+        </div>
+        <button class="collapsible" aria-labelledby="collapsible section for the sixth project">Numerical Reconstruction with OpenCV</button>
+        <div class="collapsible-content" aria-labelledby="description section for the sixth project">
+            <br>
+            <button class="button-icon" onclick="javascript:window.open('https://github.com/NumericalReconstructionWithOpenCV/Calculator','_blank')" target="_blank"><span class="fab fa-github"></span> GitHub</button>
+            <ul class="ul-project">
+                <li>A program calculates a precise size of human body with a picture of it, with the chessboard background.</li>
+                <li>Worked on calculating and drawing regression lines and minimize the error bound.</li>
+                <li>Software/Language/Framework Used: PyCharm, Python, OpenCV</li>
+            </ul>
+        </div>
+    </div>
+    <script src="collapse.js"></script>
+    <script src="project_plot.js"></script>
+
+</body>
+
+</html>

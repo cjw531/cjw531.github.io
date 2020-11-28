@@ -1,0 +1,634 @@
+/* Shared styles all over the pages */
+
+body {
+    font-family: "Oxygen", "Sans-Serif";
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    padding-bottom: 5.0vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 2.0vw;
+}
+
+a {
+    color: #2c98f0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active,
+a:focus {
+    color: #2c98f0;
+    outline: none;
+    text-decoration: none !important;
+}
+
+.topnav {
+    /* The navbar */
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-left: 2em;
+    padding-right: 2em;
+    z-index: 999;
+}
+
+.topnav a {
+    /* nav bar highlighting (linked items)*/
+    pointer-events: none;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+.topnav a:hover {
+    /* navbar item mouse hover style */
+    font-size: bold;
+    transform: scale(1.2);
+}
+
+.topnav [aria-current=page] {
+    /* nav bar current page highlight */
+    color: #258CC7;
+    font-size: bold;
+    text-decoration: underline;
+}
+
+.topnav-right {
+    /* menu items align to right side */
+    float: right;
+}
+
+.topnav ul {
+    /* navbar list setting */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.topnav li {
+    /* navbar list item setting */
+    display: inline-block;
+}
+
+.topnav-right a {
+    /* navbar right side unlink url */
+    pointer-events: unset;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+.img-container {
+    /* Position the navbar container inside the image */
+    position: relative;
+    text-align: center;
+}
+
+.centered_text_over_img .name {
+    font-size: 3.0vw;
+}
+
+.centered_text_over_img a {
+    color: #4E2A84;
+}
+
+.centered_text_over_img {
+    /* text centered over the image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7vw;
+    color: #333;
+}
+
+.bottom-right_text_over_img {
+    /* Bottom right text over the image*/
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.container {
+    /* body content container */
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: "Oxygen", "Sans-Serif";
+    font-weight: 300;
+    color: #000;
+}
+
+.container h1 {
+    /* body content header style */
+    font-size: 2.3rem;
+}
+
+.container p {
+    /* body content paragraph style */
+    font-size: 1.2rem;
+    padding-bottom: 3%;
+}
+
+.container ul li {
+    /* body content list item style */
+    font-size: 1.2em;
+}
+
+
+/* Home page styles */
+
+.bg-img {
+    /* The image used */
+    background-image: url("assets/img/ub.jpeg");
+    min-height: 350px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* full width setting */
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    /* opacity */
+    opacity: 0.35;
+}
+
+.project-card {
+    /* featured work card setting */
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+}
+
+.project-card p {
+    /* featured work card paragraph setting */
+    font-size: 1.3vw;
+}
+
+.project-card a {
+    /* featured work card paragraph setting */
+    color: #000;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    /* featured work mouse hover enlarge card */
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+}
+
+.card-container {
+    /* card inward items (text, img) padding settings */
+    padding: 0px 16px;
+}
+
+.column {
+    /* Create two columns that floats next to each other */
+    float: left;
+}
+
+.left {
+    /* text: 40% */
+    width: 40%;
+}
+
+.right {
+    /* image:  60% */
+    width: 60%;
+}
+
+.row:after {
+    /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column .card-img {
+    /* card image setting */
+    min-height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+/* About Me page styles */
+
+.about-img {
+    /* background image for about me page */
+    background-image: url("assets/img/ta.jpeg");
+    min-height: 350px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* full width setting */
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    /* opacity */
+    opacity: 0.35;
+}
+
+.container-card-interest {
+    /* research interest card container */
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.card-interest {
+    /* research interest card settings */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.card-interest-img {
+    /* research interest image settings */
+    min-height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.column-interest {
+    /* research interest section 3 items */
+    /* Create three equal columns that floats next to each other */
+    float: left;
+    width: 33.33%;
+}
+
+.row-interest {
+    /* give padding for research interest row */
+    padding-top: 1.5%;
+}
+
+.row-interest:after {
+    /* Clear floats after the research interest columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Reference (list for education): https://codepen.io/pranjal-goswami/pen/RNdpOP */
+
+.history-tl-container {
+    margin: auto;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.history-tl-container ul.tl {
+    margin: 2% 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.history-tl-container ul.tl li {
+    list-style: none;
+    margin: auto;
+    margin-left: 16vw;
+    min-height: 50%;
+    border-left: 1px dashed #86D6FF;
+    padding: 0 0 4vw 3vw;
+    position: relative;
+}
+
+.history-tl-container ul.tl li:last-child {
+    border-left: 0;
+}
+
+.history-tl-container ul.tl li::before {
+    position: absolute;
+    left: -2.2%;
+    top: -2px;
+    content: " ";
+    border: 0.5vw solid rgba(255, 255, 255, 0.74);
+    border-radius: 50%;
+    background: #258CC7;
+    height: 2vw;
+    width: 2vw;
+    transition: all 500ms ease-in-out;
+}
+
+.history-tl-container ul.tl li:hover::before {
+    border-color: #258CC7;
+    transition: all 1000ms ease-in-out;
+}
+
+ul.tl li .item-title {
+    padding-left: 2%;
+    font-size: 1.4rem;
+}
+
+ul.tl li .item-title a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.tl li .item-title a:hover {
+    text-decoration: underline;
+    color: #2c98f0;
+}
+
+ul.tl li .item-detail {
+    padding-left: 2%;
+    color: #8d8d8d;
+    font-size: 1.2rem;
+}
+
+ul.tl li .timestamp {
+    color: #8D8D8D;
+    position: absolute;
+    width: 30%;
+    left: -35%;
+    text-align: right;
+    font-size: 1.0rem;
+}
+
+
+/* End of: https://codepen.io/pranjal-goswami/pen/RNdpOP */
+
+.button-cv {
+    /* button for cv settings */
+    background-color: transparent;
+    color: #258CC7;
+    border: 2px solid #258CC7;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 2% 2%;
+}
+
+.button-cv:hover {
+    /* button for cv over the image hover alter */
+    background-color: #258CC7;
+    color: white;
+}
+
+.button-icon {
+    /* button with icon settings */
+    background-color: transparent;
+    color: #258CC7;
+    border: 2px solid #258CC7;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5% 0.5%;
+}
+
+.button-icon:hover {
+    /* button with icon hover color alter */
+    background-color: #258CC7;
+    color: white;
+}
+
+.ol-about {
+    /* list for publications and presentation items */
+    font-size: 1.2rem;
+}
+
+
+/* Contact page styles */
+
+.contact-img {
+    /* background image for contact page */
+    background-image: url("assets/img/seoul.jpeg");
+    min-height: 350px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* full width setting */
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    /* opacity */
+    opacity: 0.35;
+}
+
+.container-contact {
+    /* paragraph settings */
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: "Oxygen", "Sans-Serif";
+    font-weight: 300;
+    color: #000;
+}
+
+.container-contact p {
+    /* contact icons container */
+    font-size: 1.2rem;
+}
+
+.container-button-contact {
+    /* give button padding and make them center aligned */
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.big-icon {
+    /* enlarge contact icons */
+    color: #2c98f0;
+    font-size: 10vw;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.googleCalendar {
+    position: relative;
+    height: 0;
+    width: 70%;
+    padding-top: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.googleCalendar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+
+/* Research Page Styles */
+
+.research-img {
+    /* background image for research page */
+    background-image: url("assets/img/davis337.jpeg");
+    min-height: 350px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* full width setting */
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    /* opacity */
+    opacity: 0.35;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 1.3vw;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 0.3vw;
+    margin-top: 1.0%;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5vw;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.collapsible-content {
+    padding: 0 1.8vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    border-radius: 0.3vw;
+}
+
+.collapsible-content img {
+    padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+.collapsible-content figcaption {
+    text-align: center;
+}
+
+.collapsible-content iframe {
+    margin: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    height: 30vw;
+}
+
+.wrapper-plot {
+    /* plot wrapper */
+    margin: 2vw auto;
+    width: 50%;
+    height: 50%;
+}
+
+#pagemark {
+    /* anchor purpose null style */
+}
+
+
+/* project page styles */
+
+.project-img {
+    /* background image for project page */
+    background-image: url("assets/img/peace-bridge.jpeg");
+    min-height: 350px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* full width setting */
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    /* opacity */
+    opacity: 0.35;
+}
+
+.ul-project {
+    /* list for publications and presentation items */
+    font-size: 1.2rem;
+}

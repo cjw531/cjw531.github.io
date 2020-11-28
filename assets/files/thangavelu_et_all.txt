@@ -1,0 +1,9 @@
+@INPROCEEDINGS{9197372,
+  author={V. {Thangavelu} and M. S. {da Silva} and J. {Choi} and N. {Napp}},
+  booktitle={2020 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Autonomous Modification of Unstructured Environments with Found Material}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={7798-7804},
+  doi={10.1109/ICRA40945.2020.9197372}}
