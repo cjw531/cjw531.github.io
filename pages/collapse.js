@@ -8,6 +8,7 @@ window.onload = function() {
 function init() {
     var coll = document.getElementsByClassName("collapsible");
 
+    // expand/collapse by click event
     for (let i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
             this.classList.toggle("active");

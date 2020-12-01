@@ -1,12 +1,14 @@
 // Our labels along the x-axis
 var years = [2019, 2020];
-// For drawing the lines
+// For drawing the two histograms
 var publication = [1, 1];
 var poster = [1, 0];
 
+// chart object
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'bar', // bar graph (histogram)
+    // set max/min y-axis, and step size
     options: {
         scales: {
             yAxes: [{
@@ -20,7 +22,7 @@ var myChart = new Chart(ctx, {
             }]
         }
     },
-    data: {
+    data: { // has two dataset, publication & poster
         labels: years,
         datasets: [{
                 data: publication,

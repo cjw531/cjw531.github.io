@@ -3,9 +3,11 @@ var years = [2017, 2018, 2019, 2020];
 // For drawing the lines
 var num_proj = [4, 1, 0, 1];
 
+// chart object
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'line', // line graph
+    // set max/min y-axis, and step size
     options: {
         scales: {
             yAxes: [{
@@ -17,7 +19,7 @@ var myChart = new Chart(ctx, {
             }]
         }
     },
-    data: {
+    data: { // has single data, project
         labels: years,
         datasets: [{
             data: num_proj,
