@@ -12,10 +12,12 @@ body {
 }
 
 main {
+    /* section for background img below navbar */
     margin-top: 2.0vw;
 }
 
 a {
+    /* color the url */
     color: #2c98f0;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -23,11 +25,13 @@ a {
 }
 
 a:hover {
+    /* url hover action */
     text-decoration: underline;
 }
 
 a:active,
 a:focus {
+    /* color the url */
     color: #2c98f0;
     outline: none;
     text-decoration: none !important;
@@ -106,15 +110,19 @@ a:focus {
 }
 
 .centered_text_over_img .name {
+    /* text over the img located below the navbar */
     font-size: 3.0vw;
 }
 
 .centered_text_over_img a {
+    /* url over the img located below the navbar */
     color: #4E2A84;
 }
 
 .centered_text_over_img {
     /* text centered over the image */
+    /* reference: https://www.w3schools.com/howto/howto_css_image_text.asp */
+    /* absolute positioning direcly taken from the reference */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -125,6 +133,8 @@ a:focus {
 
 .bottom-right_text_over_img {
     /* Bottom right text over the image*/
+    /* reference: https://www.w3schools.com/howto/howto_css_image_text.asp */
+    /* absolute positioning direcly taken from the reference */
     position: absolute;
     bottom: 8px;
     right: 16px;
@@ -349,6 +359,7 @@ a:focus {
 }
 
 .history-tl-container ul.tl li::before {
+    /* absolute taken from the code from codepen */
     position: absolute;
     left: -2.2%;
     top: -2px;
@@ -388,8 +399,9 @@ ul.tl li .item-detail {
 }
 
 ul.tl li .timestamp {
-    color: #8D8D8D;
+    /* absolute taken from the code from codepen */
     position: absolute;
+    color: #8D8D8D;
     width: 30%;
     left: -35%;
     text-align: right;
@@ -492,22 +504,19 @@ ul.tl li .timestamp {
 }
 
 .googleCalendar {
-    position: relative;
-    height: 0;
-    width: 70%;
-    padding-top: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* google calendar settings */
     margin-top: 3%;
 }
 
 .googleCalendar iframe {
-    position: absolute;
+    /* iframe for google calendar settings */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 90%;
+    width: 60vw;
+    height: 40vw;
 }
 
 
@@ -534,6 +543,7 @@ ul.tl li .timestamp {
 }
 
 .collapsible {
+    /* collapsible menu settings */
     background-color: #777;
     color: white;
     cursor: pointer;
@@ -549,6 +559,7 @@ ul.tl li .timestamp {
 
 .active,
 .collapsible:hover {
+    /* collapsible menu/title item hover action */
     background-color: #555;
 }
 
@@ -574,6 +585,7 @@ ul.tl li .timestamp {
 }
 
 .collapsible-content img {
+    /* img in collapsible body part */
     padding: 2%;
     display: block;
     margin-left: auto;
@@ -582,10 +594,12 @@ ul.tl li .timestamp {
 }
 
 .collapsible-content figcaption {
+    /* make the img caption into centered */
     text-align: center;
 }
 
 .collapsible-content iframe {
+    /* iframe for youtube inside the collapsible content */
     margin: 2%;
     display: block;
     margin-left: auto;
