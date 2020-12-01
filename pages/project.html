@@ -5,15 +5,19 @@
     <title>Jiwon Choi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style.css" />
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100, 200, 300, 400, 500, 600, 700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300, 500, 700" rel="stylesheet" />
+    <!-- icon packs -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <!-- chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 </head>
 
 <body>
+    <!-- top navigation bar -->
     <div class="topnav">
         <a>JIWON CHOI</a>
         <div class="topnav-right" aria-labelledby="Main Menu Label">
@@ -28,6 +32,7 @@
     </div>
 
     <main>
+        <!-- background image under the navigation bar -->
         <div class="img-container">
             <div class="project-img" role="Decorative" aria-labelledby="Picture of Peace Bridge, Buffalo"></div>
             <div class="centered_text_over_img" aria-labelledby="Brief project lists">
@@ -37,6 +42,7 @@
         </div>
     </main>
 
+    <!-- integrate with chart.js, show number of projects for each year -->
     <div class="container-contact" aria-labelledby="Section for Number of Projects">
         <h1>Projects Over the Years</h1>
         <div class="wrapper-plot" aria-labelledby="Chart of number of projects over the year">
@@ -44,8 +50,10 @@
         </div>
     </div>
 
+    <!-- list of projects -->
     <div class="container-contact" aria-labelledby="Section for List of Projects">
         <h1 id="pagemark">Project</h1>
+        <!-- fist project -->
         <button class="collapsible" aria-labelledby="collapsible section for the first project">368: Android Application</button>
         <div class="collapsible-content" aria-labelledby="description section for the first project">
             <iframe src="https://www.youtube.com/embed/qPLhXXHlySU" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
@@ -61,6 +69,7 @@
                 <li>Software/Language Used: Android Studio, Java, XML, PHP, SQL</li>
             </ul>
         </div>
+        <!-- second project -->
         <button class="collapsible" aria-labelledby="collapsible section for the second project">Currency Calculator: Android Application</button>
         <div class="collapsible-content" aria-labelledby="description section for the second project">
             <br>
@@ -70,6 +79,7 @@
                 <li>Software/Language Used: Android Studio, Java, XML</li>
             </ul>
         </div>
+        <!-- third project -->
         <button class="collapsible" aria-labelledby="collapsible section for the third project">Letter Game</button>
         <div class="collapsible-content" aria-labelledby="description section for the third project">
             <br>
@@ -80,6 +90,7 @@
                 <li>Software/Language Used: Unity, C#</li>
             </ul>
         </div>
+        <!-- fourth project -->
         <button class="collapsible" aria-labelledby="collapsible section for the fourth project">Paint Chat: Socket Programming</button>
         <div class="collapsible-content" aria-labelledby="description section for the fourth project">
             <br>
@@ -90,6 +101,7 @@
                 <li>Software/Language Used: IntelliJ, Java</li>
             </ul>
         </div>
+        <!-- fifth project -->
         <button class="collapsible" aria-labelledby="collapsible section for the fifth project">Voyage: Android Application</button>
         <div class="collapsible-content" aria-labelledby="description section for the fifth project">
             <br>
@@ -103,6 +115,7 @@
                 <li>Software/Language Used: Android Studio, Java, XML, SQL</li>
             </ul>
         </div>
+        <!-- sixth project -->
         <button class="collapsible" aria-labelledby="collapsible section for the sixth project">Numerical Reconstruction with OpenCV</button>
         <div class="collapsible-content" aria-labelledby="description section for the sixth project">
             <br>
@@ -114,6 +127,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- include collapse menu .js and chart.js file -->
     <script src="collapse.js"></script>
     <script src="project_plot.js"></script>
 
